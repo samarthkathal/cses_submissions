@@ -35,4 +35,37 @@ void find_beautiful_num(uint64_t *n);
 
 void solve()
 {
+  uint64_t n;
+  std::cin >> n;
+
+  if (n == 1)
+  {
+    cout << 1;
+  }
+  else if (n > 1 && n < 4)
+  {
+    cout << "NO SOLUTION";
+  }
+  else if (n == 4)
+  {
+    cout << "2 4 1 3 ";
+  }
+  else
+  {
+    find_beautiful_num(&n);
+  }
+}
+
+void find_beautiful_num(uint64_t *n)
+{
+
+  for (int64_t i = *n; i >= 1; i -= 2)
+  {
+    cout << i << " ";
+  }
+
+  for (int64_t i = *n - 1; i >= 1; i -= 2)
+  {
+    cout << i << " ";
+  }
 }
