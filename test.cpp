@@ -31,8 +31,6 @@ int main()
   cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << endl;
 }
 
-void find_beautiful_num(uint64_t *n);
-
 void solve()
 {
 }
